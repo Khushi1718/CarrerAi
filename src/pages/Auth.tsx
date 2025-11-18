@@ -43,7 +43,7 @@ const Auth = () => {
           email,
           password,
           options: {
-            emailRedirectTo: `${window.location.origin}/dashboard`,
+            emailRedirectTo: `${window.location.origin}/`,
             data: {
               full_name: fullName,
             }
@@ -65,7 +65,7 @@ const Auth = () => {
           if (profileError) console.error('Profile creation error:', profileError);
           
           toast.success("Account created! Welcome aboard!");
-          navigate("/dashboard");
+          navigate("/");
         }
       }
     } catch (error: any) {

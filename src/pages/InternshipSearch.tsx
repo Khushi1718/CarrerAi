@@ -69,7 +69,7 @@ const InternshipSearch = () => {
       };
 
       // Update this URL with your actual backend API endpoint
-      const API_URL = "https://d59362c7eb0d.ngrok-free.app/find-internships";
+      const API_URL = "https://ac4d1bb43508.ngrok-free.app/find-internships";
       
       const response = await fetch(API_URL, {
         method: 'POST',
